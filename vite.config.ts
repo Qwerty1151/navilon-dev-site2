@@ -30,7 +30,7 @@ export default defineConfig({
     assetsDir: 'assets',
     sourcemap: false,
     target: 'es2020',
-    minify: 'terser',
+    minify: 'esbuild',
     terserOptions: {
       compress: {
         drop_console: true,
