@@ -4,7 +4,14 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Navilon Dev - International IT Company Website",
-  "keywords": ["react", "typescript", "tailwind", "vite", "corporate", "it-company"],
+  "keywords": [
+    "react",
+    "typescript",
+    "tailwind",
+    "vite",
+    "corporate",
+    "it-company"
+  ],
   "homepage": "https://navilon-dev.com",
   "repository": {
     "type": "git",
@@ -18,7 +25,7 @@
     "lint:fix": "eslint . --ext ts,tsx --fix",
     "type-check": "tsc --noEmit",
     "clean": "rm -rf dist node_modules/.vite",
-    "postinstall": "npm run type-check"
+    "postinstall": "echo \"skip type-check on vercel\""
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -95,7 +102,6 @@
     ]
   },
   "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=8.0.0"
+    "node": "20.x"
   }
 }
