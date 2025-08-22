@@ -8,6 +8,7 @@ export interface Translation {
     blog: string;
     careers: string;
     contact: string;
+      ambassador: string;
   };
   
   // Common
@@ -27,6 +28,33 @@ export interface Translation {
     submit: string;
     cancel: string;
     close: string;
+  };
+
+  ambassador: {
+    title: string;
+    subtitle: string;
+    raised: string;
+    goal: string;
+    supporters: string;
+    deadline: string;
+    storyTitle: string;
+    story1: string;
+    story2: string;
+    point1: string;
+    point2: string;
+    point3: string;
+    ctaTitle: string;
+    amount: string;
+    donate: string;
+    secure: string;
+    donorWall: string;
+    share: string;
+    faqTitle: string;
+    q1: string;
+    a1: string;
+    q2: string;
+    a2: string;
+    thanks: string;
   };
 
   // Hero Section
@@ -224,6 +252,32 @@ export const translations: Record<string, Translation> = {
       cancel: "Cancel",
       close: "Close"
     },
+    ambassador: {
+      title: "Support the project with John Doe",
+      subtitle: "Personal page of an ambassador. Your help makes a real impact.",
+      raised: "Raised",
+      goal: "Goal: 1 000",
+      supporters: "Supporters: 27",
+      deadline: "Deadline: end of this month",
+      storyTitle: "Why this matters",
+      story1: "We are raising funds for an open‑source tool that helps small teams launch faster.",
+      story2: "Every contribution moves us closer. Share the page or donate — both help.",
+      point1: "Transparent reporting",
+      point2: "Updates every week",
+      point3: "Open code and roadmap",
+      ctaTitle: "Make a contribution",
+      amount: "Amount",
+      donate: "Donate",
+      secure: "Payments are processed securely. Your data is protected.",
+      donorWall: "Recent contributions",
+      share: "Share this page",
+      faqTitle: "FAQ",
+      q1: "How are funds used?",
+      a1: "They go to development, design, and infrastructure. Monthly report will be published.",
+      q2: "Can I get a receipt for business?",
+      a2: "Yes. Contact us after payment and we’ll provide the necessary documents.",
+      thanks: "Thank you for your support!"
+    },
     hero: {
       title: "Navilon Dev",
       subtitle: "Navigating Innovation",
@@ -395,6 +449,32 @@ export const translations: Record<string, Translation> = {
       submit: "Отправить",
       cancel: "Отмена",
       close: "Закрыть"
+    },
+    ambassador: {
+      title: "Поддержите проект вместе с Иваном",
+      subtitle: "Личная страница амбассадора. Ваша помощь приносит реальную пользу.",
+      raised: "Собрано",
+      goal: "Цель: одна тысяча",
+      supporters: "Поддержали: двадцать семь",
+      deadline: "Дедлайн: конец этого месяца",
+      storyTitle: "Зачем это важно",
+      story1: "Мы собираем средства на open‑source инструмент, который помогает небольшим командам запускаться быстрее.",
+      story2: "Каждый взнос приближает к цели. Можно поделиться страницей или задонатить — полезно и то, и другое.",
+      point1: "Прозрачная отчётность",
+      point2: "Еженедельные обновления",
+      point3: "Открытый код и дорожная карта",
+      ctaTitle: "Сделать взнос",
+      amount: "Сумма",
+      donate: "Поддержать",
+      secure: "Платежи обрабатываются безопасно. Ваши данные защищены.",
+      donorWall: "Недавние взносы",
+      share: "Поделиться страницей",
+      faqTitle: "Частые вопросы",
+      q1: "На что идут средства?",
+      a1: "На разработку, дизайн и инфраструктуру. Ежемесячно публикуем отчёт.",
+      q2: "Можно получить счёт/акт для юрлица?",
+      a2: "Да. Напишите нам после оплаты — подготовим документы.",
+      thanks: "Спасибо за поддержку!"
     },
     hero: {
       title: "Navilon Dev",
@@ -568,6 +648,32 @@ export const translations: Record<string, Translation> = {
       cancel: "Abbrechen",
       close: "Schließen"
     },
+    ambassador: {
+      title: "Support the project with Ambassador",
+      subtitle: "Personal page of an ambassador. Your help makes a real impact.",
+      raised: "Raised",
+      goal: "Goal: 1 000",
+      supporters: "Supporters: 27",
+      deadline: "Deadline: end of this month",
+      storyTitle: "Why this matters",
+      story1: "We are raising funds for an open‑source tool that helps small teams launch faster.",
+      story2: "Every contribution moves us closer. Share the page or donate — both help.",
+      point1: "Transparent reporting",
+      point2: "Updates every week",
+      point3: "Open code and roadmap",
+      ctaTitle: "Make a contribution",
+      amount: "Amount",
+      donate: "Donate",
+      secure: "Payments are processed securely. Your data is protected.",
+      donorWall: "Recent contributions",
+      share: "Share this page",
+      faqTitle: "FAQ",
+      q1: "How are funds used?",
+      a1: "They go to development, design, and infrastructure. Monthly report will be published.",
+      q2: "Can I get a receipt for business?",
+      a2: "Yes. Contact us after payment and we’ll provide the necessary documents.",
+      thanks: "Thank you for your support!"
+    },
     hero: {
       title: "Navilon Dev",
       subtitle: "Navigation der Innovation",
@@ -739,6 +845,32 @@ export const translations: Record<string, Translation> = {
       submit: "Soumettre",
       cancel: "Annuler",
       close: "Fermer"
+    },
+    ambassador: {
+      title: "Support the project with Ambassador",
+      subtitle: "Personal page of an ambassador. Your help makes a real impact.",
+      raised: "Raised",
+      goal: "Goal: 1 000",
+      supporters: "Supporters: 27",
+      deadline: "Deadline: end of this month",
+      storyTitle: "Why this matters",
+      story1: "We are raising funds for an open‑source tool that helps small teams launch faster.",
+      story2: "Every contribution moves us closer. Share the page or donate — both help.",
+      point1: "Transparent reporting",
+      point2: "Updates every week",
+      point3: "Open code and roadmap",
+      ctaTitle: "Make a contribution",
+      amount: "Amount",
+      donate: "Donate",
+      secure: "Payments are processed securely. Your data is protected.",
+      donorWall: "Recent contributions",
+      share: "Share this page",
+      faqTitle: "FAQ",
+      q1: "How are funds used?",
+      a1: "They go to development, design, and infrastructure. Monthly report will be published.",
+      q2: "Can I get a receipt for business?",
+      a2: "Yes. Contact us after payment and we’ll provide the necessary documents.",
+      thanks: "Thank you for your support!"
     },
     hero: {
       title: "Navilon Dev",
@@ -1084,6 +1216,32 @@ export const translations: Record<string, Translation> = {
       cancel: "Anuluj",
       close: "Zamknij"
     },
+    ambassador: {
+      title: "Support the project with Ambassador",
+      subtitle: "Personal page of an ambassador. Your help makes a real impact.",
+      raised: "Raised",
+      goal: "Goal: 1 000",
+      supporters: "Supporters: 27",
+      deadline: "Deadline: end of this month",
+      storyTitle: "Why this matters",
+      story1: "We are raising funds for an open‑source tool that helps small teams launch faster.",
+      story2: "Every contribution moves us closer. Share the page or donate — both help.",
+      point1: "Transparent reporting",
+      point2: "Updates every week",
+      point3: "Open code and roadmap",
+      ctaTitle: "Make a contribution",
+      amount: "Amount",
+      donate: "Donate",
+      secure: "Payments are processed securely. Your data is protected.",
+      donorWall: "Recent contributions",
+      share: "Share this page",
+      faqTitle: "FAQ",
+      q1: "How are funds used?",
+      a1: "They go to development, design, and infrastructure. Monthly report will be published.",
+      q2: "Can I get a receipt for business?",
+      a2: "Yes. Contact us after payment and we’ll provide the necessary documents.",
+      thanks: "Thank you for your support!"
+    },
     hero: {
       title: "Navilon Dev",
       subtitle: "Nawigacja innowacji",
@@ -1255,6 +1413,32 @@ export const translations: Record<string, Translation> = {
       submit: "提交",
       cancel: "取消",
       close: "关闭"
+    },
+    ambassador: {
+      title: "Support the project with Ambassador",
+      subtitle: "Personal page of an ambassador. Your help makes a real impact.",
+      raised: "Raised",
+      goal: "Goal: 1 000",
+      supporters: "Supporters: 27",
+      deadline: "Deadline: end of this month",
+      storyTitle: "Why this matters",
+      story1: "We are raising funds for an open‑source tool that helps small teams launch faster.",
+      story2: "Every contribution moves us closer. Share the page or donate — both help.",
+      point1: "Transparent reporting",
+      point2: "Updates every week",
+      point3: "Open code and roadmap",
+      ctaTitle: "Make a contribution",
+      amount: "Amount",
+      donate: "Donate",
+      secure: "Payments are processed securely. Your data is protected.",
+      donorWall: "Recent contributions",
+      share: "Share this page",
+      faqTitle: "FAQ",
+      q1: "How are funds used?",
+      a1: "They go to development, design, and infrastructure. Monthly report will be published.",
+      q2: "Can I get a receipt for business?",
+      a2: "Yes. Contact us after payment and we’ll provide the necessary documents.",
+      thanks: "Thank you for your support!"
     },
     hero: {
       title: "Navilon Dev",

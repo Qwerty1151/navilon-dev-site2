@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MAH Media Saver</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app" role="application" aria-label="MAH Media Saver">
+    <header class="app__header">
+      <div class="brand">
+        <svg class="brand__logo" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2Zm-1.2 5.2h2.4l1.6 3.6 1.6-3.6h2.2l-3.2 6.6v5h-2.1v-5l-3.1-6.6Zm-4.3 3.2h2v8.4H6.5V8.4Z"/>
+        </svg>
+        <div class="brand__text">
+          <h1 class="title">MAH Media Saver</h1>
+          <p class="subtitle">Загрузка аудио, видео, фото и документов</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="controls" aria-label="Управление">
+      <div class="row">
+        <button id="scanBtn" class="btn primary" aria-label="Сканировать медиа на странице">Сканировать</button>
+        <button id="downloadSelectedBtn" class="btn" disabled>Скачать выбранные</button>
+        <button id="downloadAllBtn" class="btn" disabled>Скачать всё</button>
+        <button id="stopBtn" class="btn danger" disabled>Остановить</button>
+      </div>
+
+      <div class="filters">
+        <label class="switch">
+          <input id="autoDetect" type="checkbox" />
+          <span>Автодетект медиа</span>
+        </label>
+        <div class="chips" role="group" aria-label="Типы медиа">
+          <label class="chip"><input type="checkbox" id="typeVideo" checked />Видео</label>
+          <label class="chip"><input type="checkbox" id="typeAudio" checked />Аудио</label>
+          <label class="chip"><input type="checkbox" id="typePhoto" checked />Фото</label>
+          <label class="chip"><input type="checkbox" id="typeDoc" checked />Документы</label>
+        </div>
+      </div>
+
+      <div class="options">
+        <div class="field">
+          <label for="quality">Качество</label>
+          <select id="quality">
+            <option value="original">Оригинал</option>
+            <option value="hd">HD (если доступно)</option>
+            <option value="sd">SD (если доступно)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="subfolder">Подпапка</label>
+          <input id="subfolder" type="text" placeholder="mah-downloads" />
+        </div>
+        <div class="field field--wide">
+          <label for="namePattern">Шаблон имени</label>
+          <input id="namePattern" type="text" placeholder="{chat}-{sender}-{date}-{filename}" />
+          <small class="hint">Плейсхолдеры: {chat} {sender} {date} {time} {type} {ext} {filename}</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="list" aria-label="Найденные медиа">
+      <div class="list__header">
+        <span>Медиа</span>
+        <span>Выбрано: <strong id="selectedCount">0</strong></span>
+      </div>
+      <ul id="mediaList" class="media-list" role="listbox" aria-multiselectable="true"></ul>
+    </section>
+
+    <footer class="app__footer" aria-live="polite" aria-atomic="true">
+      <span id="status">Готово</span>
+    </footer>
+  </div>
+
+  <script src="popup.js" defer></script>
+</body>
+</html>

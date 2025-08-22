@@ -8,6 +8,7 @@ import { CasesPage } from './components/pages/CasesPage';
 import { BlogPage } from './components/pages/BlogPage';
 import { CareersPage } from './components/pages/CareersPage';
 import { ContactPage } from './components/pages/ContactPage';
+import { AmbassadorPage } from './components/pages/AmbassadorPage';
 import { SEOHead } from './utils/seo.tsx';
 
 export default function App() {
